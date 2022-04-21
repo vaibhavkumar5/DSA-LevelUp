@@ -2,18 +2,25 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin>>n;
-    int i=1;
-    
-    while(i<=n){
-        int j = 1;
-        while(j<=n){
-            cout<< i;
-            j++;
+   
+   int n = 5;
+
+    for (int row=1; row <= n; row++){
+        for (int col=1; col<=row; col++){
+            cout<<"* ";
         }
         cout<<endl;
-        i++;
     }
     
 }
+
+/*
+
+output:
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+*/

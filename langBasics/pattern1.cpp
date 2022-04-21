@@ -3,19 +3,28 @@ using namespace std;
 
 int main() {
 
-    int n;
-    cin >> n;
+    int n = 4;
 
-    int i = 1;
+    //For rows
+    for (int row = 1; row <=n ; row++ ) {
 
-    while(i <= n ) {
-        int j= 1;
-        while(j <= n) {
-            cout<< "*";
-            j++;
+        //for each row , print n stars or we have n col
+
+        for (int col =1 ; col <= n; col++){
+            cout<<"* ";
         }
-        cout<<endl;
-        i++;
+
+        cout << endl;
     }
      
 }
+
+/*
+
+output:
+* * * * 
+* * * * 
+* * * * 
+* * * * 
+
+*/
