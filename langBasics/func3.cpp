@@ -14,7 +14,8 @@ int getFactorial(int n){
 
 int main()
 {
-    int fact= getFactorial(5);
+    int n= 0;
+    int fact= getFactorial(n);
     cout<<fact<<endl;
  return 0;
 }
