@@ -15,7 +15,7 @@ int firstOcc(int arr[], int size, int target) {
         }
         else if (target < midElement){
             end = mid - 1;
-        } else  {
+        } else   {
             start = mid +1;
         }
          
