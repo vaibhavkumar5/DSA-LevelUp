@@ -20,7 +20,7 @@ int firstOcc(int arr[], int size, int target) {
         }
          
 
-        mid = start + (end- start)/2;
+        mid = start + (end- start)/2; 
     }
     return ans;
 }
