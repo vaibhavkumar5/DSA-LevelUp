@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 //print name n times 
@@ -81,15 +82,27 @@ void rev(int arr[], int i, int n){
         rev(arr,i+1,n-1);
     }
 }
-
+// check is the string is palindrome or not 
+bool pal(int i, string&s){
+    if(i>=s.size()/2){
+      return true;  
+    }
+    if(s[i]!=s[s.size()-i-1]){
+        return false;
+    }
+    return pal(i+1,s);
+}
+ 
 
 
 int main(){
-    int arr[]={1,2,3,4,5};
-    rev(arr,0,4);
-    for(int i=0;i<5;i++){
-        cout<< arr[i];
-    }
+    //int arr[]={1,2,3,4,5};
+   // rev(arr,0,4);
+    //for(int i=0;i<5;i++){
+    //    cout<< arr[i];
+    //}
+    string s = "madam";
+    cout<< pal(0,s);
     
     return 0;
 }
